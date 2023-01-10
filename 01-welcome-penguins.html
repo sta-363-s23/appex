@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.0.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Appex 01 – Welcome Penguins!</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+</style>
+
+
+<script src="01-welcome-penguins_files/libs/clipboard/clipboard.min.js"></script>
+<script src="01-welcome-penguins_files/libs/quarto-html/quarto.js"></script>
+<script src="01-welcome-penguins_files/libs/quarto-html/popper.min.js"></script>
+<script src="01-welcome-penguins_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="01-welcome-penguins_files/libs/quarto-html/anchor.min.js"></script>
+<link href="01-welcome-penguins_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="01-welcome-penguins_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="01-welcome-penguins_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="01-welcome-penguins_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="01-welcome-penguins_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Appex 01 – Welcome Penguins!</h1>
+<p class="subtitle lead">STA 363 - Spring 2023</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    
+  </div>
+  
+
+</header>
+
+<section id="set-up" class="level2">
+<h2 class="anchored" data-anchor-id="set-up">Set up</h2>
+<section id="login-to-rstudio-pro" class="level3">
+<h3 class="anchored" data-anchor-id="login-to-rstudio-pro">Login to RStudio Pro</h3>
+<ul>
+<li><strong>Note:</strong> if you are off campus, you will need to use a <a href="https://is.wfu.edu/services/vpn/">VPN to connect</a></li>
+<li>Go to <a href="rstudio.deac.wfu.edu">rstudio.deac.wfu.edu</a></li>
+</ul>
+<p><img src="img/01/rstudio-pro.png" width="1000" height="350"></p>
+<section id="step-1-create-a-new-project" class="level4">
+<h4 class="anchored" data-anchor-id="step-1-create-a-new-project">Step 1: Create a New Project</h4>
+<p>Click File &gt; New Project</p>
+<p><img src="img/01/new-project.png" class="img-fluid"></p>
+</section>
+<section id="step-2-click-version-control" class="level4">
+<h4 class="anchored" data-anchor-id="step-2-click-version-control">Step 2: Click “Version Control”</h4>
+<p>Click the third option.</p>
+<p><img src="img/01/version-control.png" class="img-fluid"></p>
+</section>
+<section id="step-3-click-git" class="level4">
+<h4 class="anchored" data-anchor-id="step-3-click-git">Step 3: Click Git</h4>
+<p>Click the first option</p>
+<p><img src="img/01/git.png" class="img-fluid"></p>
+</section>
+<section id="step-4-copy-my-starter-files" class="level4">
+<h4 class="anchored" data-anchor-id="step-4-copy-my-starter-files">Step 4: Copy my starter files</h4>
+<p>Paste this link in the top box (<code>Repository url</code>):</p>
+<p><code>https://github.com/sta-363-s23/appex-01-welcome-penguins.git</code></p>
+<p><img src="img/01/paste-link.png" class="img-fluid"></p>
+</section>
+</section>
+</section>
+<section id="your-turn" class="level2">
+<h2 class="anchored" data-anchor-id="your-turn">Your Turn</h2>
+<ul>
+<li>Once you log on to RStudio Pro, create a new project from version control (Git)</li>
+<li>Paste <code>https://github.com/sta-363-s23/appex-01-welcome-penguins.git</code> in the Repository url box</li>
+<li>Find the file pane (on the bottom right). Click the <code>welcome-penguins.qmd</code> file</li>
+<li>Click the “Render” button</li>
+<li>Go back to the file and change your name on top (in the <code>yaml</code> – we’ll talk about what this means later) and render again.</li>
+<li>Then, scroll to the <code>plot</code> chunk, below <strong>Palmer Penguins</strong>. Instead of looking at the relationship between flipper length and bill length, plot the relationship between flipper length and bill <strong>depth</strong>. <em>Hint, look at the full dataset at the bottom of the document for variable names, update the captions to match your new plot</em>.</li>
+<li>Render again &amp; voila!</li>
+</ul>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
