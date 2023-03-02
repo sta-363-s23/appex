@@ -67,4 +67,9 @@ Paste this link in the top box (`Repository url`):
 3. Use this grid in the `tune_grid` function. Then use `collect_metrics` and filter to only include the RSME estimates.
 4. Create a figure to examine the estimated test RMSE for the grid of penalty and mixture values -- which should you choose?
 
+## Part 5
+
+1. Using the final model specification, extract the coefficients from the model by creating a `workflow`
+2. Filter out any coefficients exactly equal to 0
+
 [![](img/favicon.png){width="100" fig-align="right"}](https://bit.ly/sta-363-s23)
