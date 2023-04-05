@@ -36,7 +36,7 @@ Click the first option
 
 Paste this link in the top box (`Repository url`):
 
-`https://github.com/sta-363-s23/17-appex.git`
+`https://github.com/sta-363-s23/appex-17.git`
 
 ![](img/01/paste-link.png)
 
